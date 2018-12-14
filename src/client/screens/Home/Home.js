@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Header from "./../../components/Header/";
-
 export default class Home extends React.Component {
   constructor() {
     super();
   }
   render() {
     return(
-      <Header appName="Welcome!" />
+      <div>
+        <h1> App Works! </h1>
+      </div>
     );
   }
 }

@@ -4,6 +4,10 @@ module.exports = {
     path: __dirname+'/dist',
     filename: 'bundle.js'
   },
+  devServer: {
+    inline: true,
+    port: 8080
+  },
   module: {
     rules: [
       {
@@ -27,7 +31,20 @@ module.exports = {
           { loader: "style-loader" },
           { loader: "css-loader" }
         ]
-      }
+      },
+      // {
+      //   test: /\.(jpe?g|gif|png|otf|ttf)$/,
+      //   use: [
+      //     { loader: 'file-loader' }
+      //   ]
+      // },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   use: [
+      //     'url-loader?limit=10000',
+      //     'img-loader'
+      //   ]
+      // }
     ]
   }
 }
